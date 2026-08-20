@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="icon" href="assets/favicon.ico">
 <title>Jannayaks™ — Kerala's Permanent Public Presence Platform</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +22,10 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{background:transparent;color:var(--charcoal);font-family:var(--fb);-webkit-font-smoothing:antialiased;position:relative;}
-
 .construction-banner{background:var(--navy);color:#fff;text-align:center;font-family:var(--fb);font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:10px;position:fixed;top:0;left:0;right:0;z-index:9999;}
 body{padding-top:38px;}
 .container{width:100%;max-width:1100px;margin:0 auto;padding:0 22px;}
 .ml{font-family:var(--fm);display:block;font-size:.85em;color:var(--gray);margin-top:2px;}
-
 /* NAV */
 nav{background:var(--white);border-bottom:2px solid var(--saffron);position:sticky;top:0;z-index:100;box-shadow:0 1px 12px rgba(0,0,0,.06);}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 22px;max-width:1400px;margin:0 auto;}
@@ -38,22 +41,16 @@ nav{background:var(--white);border-bottom:2px solid var(--saffron);position:stic
 .nav-login:hover{background:var(--navy);color:white;}
 .nav-cta{background:var(--saffron);color:white;border:none;padding:8px 18px;border-radius:4px;font-size:12px;font-weight:600;cursor:pointer;font-family:var(--fb);transition:background .2s;}
 .nav-cta:hover{background:#a84400;}
-
 /* HERO */
 .hero{background:linear-gradient(135deg,#F8F6F2 0%,#EEF0F8 100%);padding:72px 22px 80px;text-align:center;border-bottom:1px solid var(--border);position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;top:-40px;right:-40px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(198,81,2,.06),transparent);pointer-events:none;}
 .hero::after{content:'';position:absolute;bottom:-60px;left:-60px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(15,31,61,.04),transparent);pointer-events:none;}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:6px;background:rgba(15,31,61,.07);border:1px solid rgba(15,31,61,.12);padding:5px 14px;border-radius:20px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--navy);margin-bottom:28px;font-weight:600;}
-.hero-h1{font-family:var(--fd);font-size:clamp(38px,7vw,68px);font-weight:700;color:var(--navy);line-height:1.08;margin-bottom:8px;}
-.hero-h1-ml{font-family:var(--fm);font-size:clamp(22px,4vw,38px);font-weight:600;color:var(--navy);opacity:.7;margin-bottom:28px;display:block;}
-.hero-sub{font-size:15px;color:var(--gray);max-width:500px;margin:0 auto 12px;line-height:1.75;font-weight:300;}
-.hero-sub-ml{font-family:var(--fm);font-size:13px;color:var(--gray);max-width:500px;margin:0 auto 44px;line-height:1.75;display:block;opacity:.8;}
-.hero-btns{display:flex;flex-direction:column;gap:12px;align-items:center;}
-.btn-primary{background:var(--saffron);color:white;border:none;padding:14px 36px;font-size:14px;font-weight:600;border-radius:5px;cursor:pointer;font-family:var(--fb);transition:all .2s;width:100%;max-width:260px;}
-.btn-primary:hover{background:#a84400;transform:translateY(-1px);}
-.btn-secondary{background:white;color:var(--navy);border:1.5px solid var(--navy);padding:14px 36px;font-size:14px;font-weight:500;border-radius:5px;cursor:pointer;font-family:var(--fb);transition:all .2s;width:100%;max-width:260px;}
-.btn-secondary:hover{background:var(--navy);color:white;}
-
+.hero-main-heading{text-align:center;max-width:900px;margin:0 auto 30px;position:relative;}
+.hero-main-heading h1{font-family:var(--fd);font-size:clamp(38px,7vw,68px);line-height:1.08;font-weight:700;color:var(--navy);margin:0 0 6px;}
+.hero-main-heading .hero-ml{font-family:var(--fm);font-size:clamp(22px,4vw,38px);line-height:1.25;color:var(--navy);margin:0;opacity:.7;}
+.hero-intro{max-width:760px;margin:0 auto 0;position:relative;}
+.hero-intro p{font-size:17px;line-height:1.65;font-weight:300;color:var(--charcoal);}
+.hero-intro .hero-ml{font-family:var(--fm);font-size:14px;line-height:1.7;color:var(--gray);margin-top:8px;display:block;}
 /* SEARCH BOX */
 .search-section{background:transparent;padding:48px 22px;border-bottom:1px solid var(--border);}
 .search-box{background:white;border:1.5px solid var(--border);border-radius:12px;padding:32px;max-width:740px;margin:0 auto;box-shadow:0 4px 24px rgba(0,0,0,.06);}
@@ -76,7 +73,6 @@ nav{background:var(--white);border-bottom:2px solid var(--saffron);position:stic
 .search-btn{width:100%;background:var(--navy);color:white;border:none;padding:13px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:var(--fb);transition:background .2s;}
 .search-btn:hover{background:var(--saffron);}
 .search-note{font-size:11px;color:var(--gray);text-align:center;margin-top:12px;font-style:italic;}
-
 /* HOW IT WORKS */
 .hiw{padding:72px 22px;background:transparent;}
 .section-hd{text-align:center;margin-bottom:48px;}
@@ -91,7 +87,6 @@ nav{background:var(--white);border-bottom:2px solid var(--saffron);position:stic
 .step-title{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:3px;}
 .step-title-ml{font-family:var(--fm);font-size:12px;color:var(--gray);display:block;margin-bottom:5px;}
 .step-text{font-size:13px;color:var(--gray);line-height:1.65;}
-
 /* TIERS */
 .tiers{padding:72px 22px;background:transparent;}
 .tiers-grid{display:flex;flex-direction:column;gap:16px;max-width:1000px;margin:0 auto;}
@@ -124,7 +119,6 @@ nav{background:var(--white);border-bottom:2px solid var(--saffron);position:stic
 .tbtn-a:hover{background:var(--saffron);}
 .tbtn-e{background:transparent;color:var(--navy);border:1.5px solid var(--navy);}
 .tbtn-e:hover{background:var(--navy);color:white;}
-
 /* URL SECTION */
 .url-section{padding:60px 22px;background:transparent;border-top:1px solid var(--border);}
 .url-box{background:white;border:1.5px solid var(--border);border-radius:12px;padding:32px;max-width:680px;margin:0 auto;}
@@ -139,7 +133,6 @@ nav{background:var(--white);border-bottom:2px solid var(--saffron);position:stic
 .url-custom-title{font-size:13px;font-weight:600;color:var(--green);margin-bottom:4px;}
 .url-custom-text{font-size:12px;color:var(--gray);line-height:1.6;}
 .url-custom-text-ml{font-family:var(--fm);font-size:11px;color:var(--gray);display:block;margin-top:3px;line-height:1.6;}
-
 /* WELLWISHER */
 .ww-section{padding:60px 22px;background:transparent;border-top:1px solid var(--border);}
 .ww-inner{max-width:680px;margin:0 auto;text-align:center;}
@@ -150,16 +143,13 @@ nav{background:var(--white);border-bottom:2px solid var(--saffron);position:stic
 .ww-text-ml{font-family:var(--fm);font-size:12px;color:var(--gray);line-height:1.75;display:block;margin-bottom:24px;}
 .ww-btn{background:transparent;border:1.5px solid var(--saffron);color:var(--saffron);padding:12px 28px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--fb);transition:all .2s;}
 .ww-btn:hover{background:var(--saffron);color:white;}
-
 .mem-section{padding:64px 22px;background:var(--navy);text-align:center;}
-.mem-icon{font-size:36px;margin-bottom:14px;display:block;opacity:.9;}
 .mem-title{font-family:var(--fd);font-size:26px;font-weight:700;color:white;margin-bottom:4px;}
 .mem-title-ml{font-family:var(--fm);font-size:16px;color:rgba(255,255,255,.65);display:block;margin-bottom:14px;}
 .mem-text{font-size:14px;color:rgba(255,255,255,.75);line-height:1.75;max-width:560px;margin:0 auto 6px;}
 .mem-text-ml{font-family:var(--fm);font-size:12px;color:rgba(255,255,255,.6);line-height:1.75;display:block;max-width:560px;margin:0 auto 24px;}
 .mem-btn{background:var(--gold);color:white;border:none;padding:12px 28px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--fb);transition:all .2s;}
 .mem-btn:hover{background:#9a7009;}
-
 /* FOOTER */
 footer{background:var(--navy);padding:48px 22px 28px;}
 .footer-grid{display:grid;grid-template-columns:1fr;gap:32px;margin-bottom:36px;max-width:1100px;margin-left:auto;margin-right:auto;}
@@ -176,7 +166,6 @@ footer{background:var(--navy);padding:48px 22px 28px;}
 .f-more-note{font-size:11px;color:rgba(255,255,255,.35);margin-top:10px;line-height:1.5;max-width:180px;}
 .f-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;flex-direction:column;gap:5px;align-items:center;text-align:center;max-width:1100px;margin:0 auto;}
 .f-copy,.f-tag{font-size:11px;color:rgba(255,255,255,.25);}
-
 /* TRANSLATE DROPDOWN */
 .translate-wrap{position:relative;}
 .translate-dropdown{display:none;position:absolute;top:calc(100% + 6px);right:0;background:white;border:1px solid var(--border);border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.1);min-width:160px;z-index:200;}
@@ -185,10 +174,8 @@ footer{background:var(--navy);padding:48px 22px 28px;}
 .translate-dropdown a:hover{background:var(--light);}
 .translate-dropdown a:first-child{border-radius:8px 8px 0 0;}
 .translate-dropdown a:last-child{border-radius:0 0 8px 8px;}
-
 /* RESPONSIVE */
 @media(min-width:600px){
-  .hero-btns{flex-direction:row;justify-content:center;}
   .cascade-row{grid-template-columns:repeat(3,1fr);}
   .tiers-grid{flex-direction:row;align-items:stretch;}
   .tier-card{flex:1;}
@@ -226,14 +213,12 @@ document.addEventListener('click',function(e){
     document.querySelector('.translate-dropdown').classList.remove('open');
 });
 function setLang(lang){
-  var s=document.cookie.split(';');
   document.cookie='googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
   document.cookie='googtrans=/en/'+lang+'; path=/;';
   location.reload();
 }
 </script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
@@ -253,9 +238,6 @@ function setLang(lang){
           <a href="#" onclick="setLang('ml');return false;">മലയാളം</a>
           <a href="#" onclick="setLang('hi');return false;">हिन्दी</a>
           <a href="#" onclick="setLang('ta');return false;">தமிழ்</a>
-          <a href="#" onclick="setLang('kn');return false;">ಕನ್ನಡ</a>
-          <a href="#" onclick="setLang('te');return false;">తెలుగు</a>
-          <a href="#" onclick="setLang('bn');return false;">বাংলা</a>
         </div>
       </div>
       <button class="nav-login">Sign In</button>
@@ -263,38 +245,33 @@ function setLang(lang){
     </div>
   </div>
 </nav>
-
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-eyebrow">🇮🇳 Kerala's Permanent Public Presence Platform</div>
-  <h1 class="hero-h1">Your standing.<br>Permanently recorded.</h1>
-  <span class="hero-h1-ml">നിങ്ങളുടെ സ്ഥാനം.<br>സ്ഥിരമായി രേഖപ്പെടുത്തിയിരിക്കുന്നു.</span>
-  <p class="hero-sub">രാഷ്ട്രീയ, സാമൂഹ്യ, സാംസ്‌കാരിക മേഖലകളിൽ ഉള്ളവർക്കും, പൗരപ്രമുഖർക്കും വേണ്ടി —<br>a permanent, professional digital identity for those in politics, community and cultural leadership, and public life — across Kerala, at every level.</p>
-  <span class="hero-sub-ml">രാഷ്ട്രീയ, സാമൂഹ്യ, സാംസ്‌കാരിക മേഖലകളിലെ നേതാക്കൾക്കും പൊതുപ്രവർത്തകർക്കും വേണ്ടി — കേരളത്തിലുടനീളം, എല്ലാ തലത്തിലും.</span>
-  <div class="hero-btns">
-    <button class="btn-primary" onclick="document.getElementById('tiers').scrollIntoView({behavior:'smooth'})">Herald Yourself →<br><span style="font-family:var(--fm);font-size:11px;font-weight:400;opacity:.85;">ജനനായകനാകൂ</span></button>
-    <button class="btn-secondary" onclick="document.getElementById('search').scrollIntoView({behavior:'smooth'})">Find a Public Figure<br><span style="font-family:var(--fm);font-size:11px;font-weight:400;">വ്യക്തിയെ കണ്ടെത്തൂ</span></button>
+  <div class="hero-main-heading">
+    <h1>For Malayalees around the world</h1>
+    <span class="hero-ml">ലോകമെമ്പാടും ഉള്ള മലയാളികൾക്ക് വേണ്ടി</span>
+  </div>
+  <div class="hero-intro">
+    <p>An exclusive permanent page for those active in politics, public life, culture, social work and religious spheres — and for notable personalities in society.</p>
+    <span class="hero-ml">രാഷ്ടീയം, സാംസ്കാരികം, സമുദായികം എന്നീ മേഖലകളിൽ ഉള്ളവർക്കും, സമൂഹത്തിലെ ശ്രദ്ദേയ വ്യക്തിത്വങ്ങൾക്കും അവരുടേതായ ഒരു ഇന്റർനെറ്റ് പേജ്.</span>
   </div>
 </section>
-
 <!-- SEARCH -->
 <section class="search-section" id="search">
   <div class="search-box">
-    <div class="search-title">Find Your Representative</div>
-    <span class="search-title-ml">നിങ്ങളുടെ ജനപ്രതിനിധിയെ കണ്ടെത്തൂ</span>
+    <div class="search-title">Search</div>
+    <span class="search-title-ml">കണ്ടെത്തൂ</span>
     <div class="search-tabs">
-      <button class="search-tab active" onclick="switchTab(this,'name')">🔍 By Name / പേരുപ്രകാരം</button>
-      <button class="search-tab" onclick="switchTab(this,'area')">📍 By Area / പ്രദേശം</button>
-      <button class="search-tab" onclick="switchTab(this,'pin')">📮 By Pin Code</button>
+      <button class="search-tab active" onclick="switchTab(this,'name')">🔍 By Name / പേര് പ്രകാരം</button>
+      <button class="search-tab" onclick="switchTab(this,'area')">📍 By Area / പ്രദേശം പ്രകാരം</button>
+      <button class="search-tab" onclick="switchTab(this,'pin')">📮 By Pin Code / പിൻകോഡ് പ്രകാരം</button>
     </div>
-
     <div id="tab-name">
       <div class="search-input-wrap">
         <span class="search-icon">🔍</span>
         <input class="search-input" type="text" placeholder="Type name, ward, panchayat... / പേര്, വാർഡ്, പഞ്ചായത്ത്...">
       </div>
     </div>
-
     <div id="tab-area" style="display:none;">
       <div class="cascade-row">
         <select class="cascade-select"><option>Kerala ▾</option></select>
@@ -303,25 +280,22 @@ function setLang(lang){
       </div>
       <select class="cascade-select" style="width:100%;margin-bottom:16px;"><option>Select Ward ▾</option></select>
     </div>
-
     <div id="tab-pin" style="display:none;">
       <div class="pincode-row">
         <input class="pincode-input" type="text" placeholder="Enter 6-digit pin code..." maxlength="6">
       </div>
     </div>
-
     <button class="search-btn">Search — ലോകത്തെവിടെ നിന്നും തിരയൂ 🌍</button>
-    <p class="search-note">Search is open worldwide. Anyone, anywhere can find Kerala's representatives. / ലോകത്തെവിടെ നിന്നും തിരയാം.</p>
+    <p class="search-note">Search is open worldwide. / ലോകത്തെവിടെ നിന്നും തിരയാവുന്നതാണ്.</p>
   </div>
 </section>
-
 <!-- HOW IT WORKS -->
 <section class="hiw" id="hiw">
   <div class="container">
     <div class="section-hd">
       <span class="section-eyebrow">How It Works / എങ്ങനെ പ്രവർത്തിക്കുന്നു</span>
       <h2 class="section-title">From conversation to live profile
-        <span class="section-title-ml">സംഭാഷണത്തിൽ നിന്ന് ലൈവ് പ്രൊഫൈലിലേക്ക്</span>
+        <span class="section-title-ml">സംഭാഷണത്തിൽ നിന്ന് തത്സമയ പ്രൊഫൈലിലേക്ക്</span>
       </h2>
       <p class="section-sub">From your answers to a live profile, reviewed by a real editor at every step.</p>
     </div>
@@ -330,7 +304,7 @@ function setLang(lang){
         <div class="step-num">01</div>
         <div>
           <div class="step-title">Register & Verify
-            <span class="step-title-ml">രജിസ്റ്റർ ചെയ്ത് സ്ഥിരീകരിക്കൂ</span>
+            <span class="step-title-ml">രജിസ്റ്റർ ചെയ്ത് സ്ഥിരീകരിക്കുക</span>
           </div>
           <div class="step-text">Sign in with Google or WhatsApp. Choose your handle, tier, and location. Identity verification runs alongside editorial review before anything publishes.</div>
         </div>
@@ -339,7 +313,7 @@ function setLang(lang){
         <div class="step-num">02</div>
         <div>
           <div class="step-title">Answer Our Questions
-            <span class="step-title-ml">ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകൂ</span>
+            <span class="step-title-ml">ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുക</span>
           </div>
           <div class="step-text">Fill in our online interview — in Malayalam, English, or both. Answer at your own pace, or at a nearby service centre if typing isn't convenient.</div>
         </div>
@@ -348,7 +322,7 @@ function setLang(lang){
         <div class="step-num">03</div>
         <div>
           <div class="step-title">Pay & Generate
-            <span class="step-title-ml">പേ ചെയ്ത് ജനറേറ്റ് ചെയ്യൂ</span>
+            <span class="step-title-ml">പേയ്‌മെന്റ് ചെയ്ത് ജനറേറ്റ് ചെയ്യുക</span>
           </div>
           <div class="step-text">Pay via UPI or card. Our editorial team drafts your biography in English, then in Malayalam — reviewed by a human at every stage, not machine-published.</div>
         </div>
@@ -357,7 +331,7 @@ function setLang(lang){
         <div class="step-num">04</div>
         <div>
           <div class="step-title">Go Live
-            <span class="step-title-ml">ലൈവ് ആകൂ</span>
+            <span class="step-title-ml">തത്സമയമാക്കുക</span>
           </div>
           <div class="step-text">Approve your profile. jannayaks.in/yourname goes live in both languages — permanently, side by side on desktop, stacked on mobile.</div>
         </div>
@@ -365,34 +339,38 @@ function setLang(lang){
     </div>
   </div>
 </section>
-
 <!-- TIERS -->
+<section class="ep-section">
+  <div class="container" style="max-width:680px;text-align:center;">
+    <h3 style="font-family:var(--fd);font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px;">Editorial Preparation</h3>
+    <p style="font-size:14px;color:var(--charcoal);line-height:1.7;">Every profile is prepared by our human editors, assisted by Artificial Intelligence.</p>
+    <span style="font-family:var(--fm);font-size:12px;color:var(--gray);line-height:1.7;display:block;margin-top:4px;">നിങ്ങളുടെ വിവരണം തയ്യാറാക്കാൻ മാനുഷിക ബുദ്ധിക്കു പുറമെ നിർമ്മിതബുദ്ധിയുടെ സഹായവും ഞങ്ങൾ ഉപയോഗിക്കുന്നു.</span>
+  </div>
+</section>
 <section class="tiers" id="tiers">
   <div class="container">
     <div class="section-hd">
       <span class="section-eyebrow">Membership / അംഗത്വം</span>
       <h2 class="section-title">Three tiers. One platform.
-        <span class="section-title-ml">മൂന്ന് തലങ്ങൾ. ഒരു പ്ലാറ്റ്ഫോം.</span>
+        <span class="section-title-ml">മൂന്ന് തലങ്ങൾ. ഒരു പ്ലാറ്റ്‌ഫോം.</span>
       </h2>
       <p class="section-sub">Every member's profile is editorially reviewed before it goes live.</p>
     </div>
     <div class="tiers-grid">
-
       <!-- DISTINGUISHED -->
       <div class="tier-card distinguished">
         <div class="tier-pop d">★ Distinguished</div>
         <div style="margin-top:12px;">
           <div class="tier-name-en">Distinguished</div>
-          <div class="tier-name-ml">പ്രമുഖർ</div>
-          <div class="tier-price-row"><span class="tier-price">₹15,000</span><div class="tier-price-sub">incl. GST · ₹2,000/yr renewal, 1 free edit/yr</div></div>
+          <div class="tier-name-ml">പ്രശസ്തർ</div>
+          <div class="tier-price-row"><span class="tier-price">₹15,000</span><div class="tier-price-sub">incl. GST · ₹2,000/yr renewal, 1 free edit/yr, ₹3,000 per additional edit</div></div>
           <div class="tier-who">Senior political leaders, state-level office-bearers, and the most established names in community and cultural leadership
-            <span class="tier-who-ml">മുതിർന്ന രാഷ്ട്രീയ നേതൃത്വം, സംസ്ഥാനതല ഭാരവാഹികൾ, സാമൂഹ്യ-സാംസ്‌കാരിക രംഗത്തെ അതിപ്രഗത്ഭർ</span>
+            <span class="tier-who-ml">മുതിർന്ന രാഷ്ട്രീയ നേതാക്കൾ, സംസ്ഥാനതല ഭാരവാഹികൾ, സാമൂഹിക-സാംസ്കാരിക രംഗത്തെ പ്രഗത്ഭർ</span>
           </div>
-
           <div class="tier-hr"></div>
           <div class="tier-features">
             <div class="tier-f"><span class="tier-f-check">✓</span> Verified profile — Gold badge</div>
-            <div class="tier-f"><span class="tier-f-check">✓</span> AI biography — 700 words (EN + ML)</div>
+            <div class="tier-f"><span class="tier-f-check">✓</span> Artificial Intelligence–assisted biography — 700 words (EN + ML)</div>
             <div class="tier-f"><span class="tier-f-check">✓</span> Personal URL — jannayaks.in/slug</div>
             <div class="tier-f"><span class="tier-f-check">✓</span> Digital visiting card + QR code</div>
             <div class="tier-f"><span class="tier-f-check">✓</span> Posts — text, photos & video links</div>
@@ -400,25 +378,22 @@ function setLang(lang){
             <div class="tier-f"><span class="tier-f-check">✓</span> Featured listing — top of all directories</div>
             <div class="tier-f"><span class="tier-f-check">✓</span> Annual profile refresh</div>
           </div>
-          <button class="tier-btn tbtn-d">Herald Yourself — പ്രമുഖനാകൂ →</button>
         </div>
       </div>
-
       <!-- ACCOMPLISHED -->
       <div class="tier-card accomplished">
         <div class="tier-pop a">Accomplished</div>
         <div style="margin-top:12px;">
           <div class="tier-name-en">Accomplished</div>
           <div class="tier-name-ml">ജനസമ്മതർ</div>
-          <div class="tier-price-row"><span class="tier-price">₹10,000</span><div class="tier-price-sub">incl. GST · ₹2,000/yr renewal, 1 free edit/yr</div></div>
+          <div class="tier-price-row"><span class="tier-price">₹10,000</span><div class="tier-price-sub">incl. GST · ₹2,000/yr renewal, 1 free edit/yr, ₹3,000 per additional edit</div></div>
           <div class="tier-who">Elected and former representatives, and established leaders of organisations, institutions, and community bodies
-            <span class="tier-who-ml">ജനപ്രതിനിധികൾ, മുൻ ജനപ്രതിനിധികൾ, സംഘടനകളുടെയും സ്ഥാപനങ്ങളുടെയും അംഗീകൃത നേതാക്കൾ</span>
+            <span class="tier-who-ml">തിരഞ്ഞെടുക്കപ്പെട്ടവരും മുൻ ജനപ്രതിനിധികളും, സംഘടനകളുടെയും സ്ഥാപനങ്ങളുടെയും നേതാക്കളും</span>
           </div>
-
           <div class="tier-hr"></div>
           <div class="tier-features">
             <div class="tier-f"><span class="tier-f-check">✓</span> Verified profile — Verified badge</div>
-            <div class="tier-f"><span class="tier-f-check">✓</span> AI biography — 500 words (EN + ML)</div>
+            <div class="tier-f"><span class="tier-f-check">✓</span> Artificial Intelligence–assisted biography — 500 words (EN + ML)</div>
             <div class="tier-f"><span class="tier-f-check">✓</span> Personal URL — jannayaks.in/slug</div>
             <div class="tier-f"><span class="tier-f-check">✓</span> Digital visiting card + QR code</div>
             <div class="tier-f"><span class="tier-f-check">✓</span> Posts — text & photos</div>
@@ -426,110 +401,94 @@ function setLang(lang){
             <div class="tier-f"><span class="tier-f-check">✓</span> Priority listing above Emerging</div>
             <div class="tier-f"><span class="tier-f-check">✓</span> Annual profile refresh</div>
           </div>
-          <button class="tier-btn tbtn-a">Herald Yourself — ജനസമ്മതനാകൂ →</button>
         </div>
       </div>
-
       <!-- EMERGING -->
       <div class="tier-card emerging">
         <div class="tier-pop e">● Emerging</div>
         <div class="tier-name-en" style="margin-top:12px;">Emerging</div>
         <div class="tier-name-ml">ജനകീയർ</div>
-        <div class="tier-price-row"><span class="tier-price">₹5,000</span><div class="tier-price-sub">incl. GST · ₹2,000/yr renewal, 1 free edit/yr</div></div>
+        <div class="tier-price-row"><span class="tier-price">₹5,000</span><div class="tier-price-sub">incl. GST · ₹2,000/yr renewal, 1 free edit/yr, ₹3,000 per additional edit</div></div>
         <div class="tier-who">Local body members, active workers, and rising figures in community or cultural life
-          <span class="tier-who-ml">തദ്ദേശ സ്വയംഭരണ അംഗങ്ങൾ, സജീവ പ്രവർത്തകർ, സാമൂഹ്യ-സാംസ്‌കാരിക രംഗത്തെ ഉദയോന്മുഖർ</span>
+          <span class="tier-who-ml">തദ്ദേശസ്വയംഭരണ സ്ഥാപന അംഗങ്ങൾ, സജീവ പ്രവർത്തകർ, സാമൂഹിക-സാംസ്കാരിക രംഗത്തെ പ്രവർത്തകർ </span>
         </div>
-
         <div class="tier-hr"></div>
         <div class="tier-features">
           <div class="tier-f"><span class="tier-f-check">✓</span> Verified profile</div>
-          <div class="tier-f"><span class="tier-f-check">✓</span> AI biography — 300 words (EN + ML)</div>
+          <div class="tier-f"><span class="tier-f-check">✓</span> Artificial Intelligence–assisted biography — 300 words (EN + ML)</div>
           <div class="tier-f"><span class="tier-f-check">✓</span> Personal URL — jannayaks.in/slug</div>
           <div class="tier-f"><span class="tier-f-check">✓</span> Digital visiting card + QR code</div>
           <div class="tier-f"><span class="tier-f-check">✓</span> Posts — text only</div>
-          <div class="tier-f"><span class="tier-f-x">✗</span> Well-wisher dashboard (count only)</div>
+          <div class="tier-f"><span class="tier-f-check">✓</span> Well-wisher dashboard (count only)</div>
           <div class="tier-f"><span class="tier-f-check">✓</span> Standard listing in directories</div>
           <div class="tier-f"><span class="tier-f-check">✓</span> Annual profile refresh</div>
         </div>
-        <button class="tier-btn tbtn-e">Herald Yourself — ജനകീയനാകൂ →</button>
       </div>
-
     </div>
   </div>
 </section>
-
 <!-- URL NAMING -->
 <section class="url-section">
   <div class="url-box">
     <div class="url-title">Your Personal Profile URL</div>
-    <span class="url-title-ml">നിങ്ങളുടെ സ്വകീയ പ്രൊഫൈൽ വിലാസം</span>
-
+    <span class="url-title-ml">നിങ്ങളുടെ വ്യക്തിഗത പ്രൊഫൈൽ വിലാസം</span>
     <div class="url-note">
       Every member gets a permanent personal URL at jannayaks.in. You can choose how your name appears — we make it unique.
-      <span class="url-note-ml">ഓരോ അംഗത്തിനും jannayaks.in-ൽ ഒരു സ്ഥിരമായ വ്യക്തിഗത URL ലഭിക്കുന്നു.</span>
+      <span class="url-note-ml">ഓരോ അംഗത്തിനും jannayaks.in-ൽ ഒരു സ്ഥിരമായ വ്യക്തിഗത URL ലഭിക്കുന്നു. നിങ്ങളുടെ പേര് എങ്ങനെ പ്രത്യക്ഷപ്പെടണമെന്ന് നിങ്ങൾക്ക് തിരഞ്ഞെടുക്കാം — ഞങ്ങൾ അത് അദ്വിതീയമാക്കും.</span>
     </div>
-
     <div class="url-examples">
       <div class="url-example">
-        jannayaks.in/<strong>johnjacob</strong>
+        jannayaks.in/<strong>Abdulrasheed</strong>
         <span class="url-badge">Simple</span>
       </div>
       <div class="url-example">
-        jannayaks.in/<strong>johnjacob-nemom</strong>
+        jannayaks.in/<strong>sukumaraluva</strong>
         <span class="url-badge">Name + Place</span>
       </div>
       <div class="url-example">
-        jannayaks.in/<strong>johnjacob-mathew</strong>
+        jannayaks.in/<strong>jacobvaliyaveed</strong>
         <span class="url-badge">Name + Family Name</span>
       </div>
     </div>
-
     <div class="url-custom">
       <div class="url-custom-title">✦ Create Your Own Handle</div>
       <div class="url-custom-text">
         You can also choose a completely custom handle — like <strong>johndoe12</strong> or <strong>jj_nemom</strong>. As long as it is available and does not already exist on the platform, it is yours.
-        <span class="url-custom-text-ml">നിങ്ങൾ ആഗ്രഹിക്കുന്ന ഒരു ഹാൻഡിൽ തിരഞ്ഞെടുക്കാം — johndoe12 അല്ലെങ്കിൽ jj_nemom പോലുള്ളത്. അത് ലഭ്യമാണെങ്കിൽ, അത് നിങ്ങളുടേതാണ്.</span>
+        <span class="url-custom-text-ml">നിങ്ങൾ ആഗ്രഹിക്കുന്ന ഒരു കസ്റ്റം ഹാൻഡിൽ തിരഞ്ഞെടുക്കാം — johndoe12 അല്ലെങ്കിൽ jj_nemom പോലുള്ളത്. അത് ലഭ്യമാണെങ്കിൽ, അത് നിങ്ങളുടേതായിരിക്കും.</span>
       </div>
     </div>
   </div>
 </section>
-
 <!-- WELL-WISHER -->
 <section class="ww-section" id="wellwisher">
   <div class="ww-inner">
     <span class="ww-icon">🙏</span>
     <h2 class="ww-title">Join as a Well-wisher</h2>
-    <span class="ww-title-ml">അഭ്യുദയകാംക്ഷി ആയി ചേരൂ</span>
+    <span class="ww-title-ml">അഭ്യുദയകാംക്ഷിയായി ചേരൂ</span>
     <p class="ww-text">Support your representative without a paid subscription. Register free, follow their profile, receive updates, and react to their posts. Your support is visible to them — your phone number never is.</p>
-    <span class="ww-text-ml">നിങ്ങളുടെ പ്രതിനിധിയെ പിന്തുണയ്ക്കൂ. സൗജന്യമായി രജിസ്റ്റർ ചെയ്ത് പ്രൊഫൈൽ ഫോളോ ചെയ്യൂ. നിങ്ങളുടെ പിന്തുണ അവർക്ക് കാണാം — ഫോൺ നമ്പർ ഒരിക്കലും.</span>
-    <button class="ww-btn">Join as Well-wisher — അഭ്യുദയകാംക്ഷി ആയി ചേരൂ</button>
+    <span class="ww-text-ml">പണമടച്ചുള്ള അംഗത്വമില്ലാതെ നിങ്ങളുടെ പ്രതിനിധിയെ പിന്തുണയ്ക്കൂ. സൗജന്യമായി രജിസ്റ്റർ ചെയ്ത് പ്രൊഫൈൽ പിന്തുടരൂ, അപ്‌ഡേറ്റുകൾ സ്വീകരിക്കൂ, പോസ്റ്റുകളോട് പ്രതികരിക്കൂ. നിങ്ങളുടെ പിന്തുണ അവർക്ക് ദൃശ്യമാകും — ഫോൺ നമ്പർ ഒരിക്കലും വെളിപ്പെടുത്തില്ല.</span>
+    <button class="ww-btn">Join as Well-wisher — അഭ്യുദയകാംക്ഷിയായി ചേരൂ</button>
   </div>
 </section>
-
 <!-- IN MEMORIAM -->
 <section class="mem-section" id="memoriam">
-  <span class="mem-icon">🪔</span>
   <h2 class="mem-title">In Memoriam</h2>
   <span class="mem-title-ml">സ്മരണാഞ്ജലി</span>
-  <p class="mem-text">A permanent, dignified memorial page for someone who has passed — open to anyone, prepared with the same editorial care as a living profile.</p>
-  <span class="mem-text-ml">അന്തരിച്ചവർക്കായി ഒരു സ്ഥിരം അനുസ്മരണ താൾ — ആർക്കും തുറന്നത്, അതേ എഡിറ്റോറിയൽ ശ്രദ്ധയോടെ തയ്യാറാക്കുന്നത്.</span>
+  <p class="mem-text">A special section is provided for popular personalities who have passed away. A permanent, dignified memorial page for someone who has passed — open to anyone, prepared with the same editorial care as a living profile. For details, write to founder@jannayaks.in.</p>
+  <span class="mem-text-ml">യശശരീരുടെ ഓർമക്കായ്‌ ഒരു സ്ഥിരവും അന്തസ്സുള്ളതുമായ അനുസ്മരണ താൾ — ജീവിച്ചിരിക്കുന്ന പ്രൊഫൈലിന്റെ അതേ എഡിറ്റോറിയൽ ശ്രദ്ധയോടെ തയ്യാറാക്കുന്നത്.</span>
   <div>
     <button class="mem-btn">Create a Memorial — ₹25,000 / 3 years</button>
   </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
         <div class="f-logo"><img src="assets/jannayaks-logo-english.png" alt="Jannayaks"></div>
-        <div class="f-about">India's political presence platform. Every representative. Every party. One platform.
-          <span class="f-about-ml">ഇന്ത്യയുടെ രാഷ്ട്രീയ സാന്നിദ്ധ്യ പ്ലാറ്റ്ഫോം.</span>
-        </div>
         <div class="f-contact">
           <a href="mailto:hello@jannayaks.in">✉ hello@jannayaks.in</a>
-          <a href="#">🌐 jannayaks.in · jannayaks.com</a>
+          <a href="#">🌐 jannayaks.in</a>
         </div>
       </div>
       <div>
@@ -555,8 +514,7 @@ function setLang(lang){
         <ul class="f-links">
           <li><a href="#">About Jannayaks</a></li>
           <li><a href="#">Political Neutrality</a></li>
-          <li><a href="#">Aadhaar Privacy</a></li>
-          <li><a href="#">For CSC VLEs</a></li>
+          <li><a href="#">Identity Verification</a></li>
         </ul>
       </div>
       <div>
@@ -569,12 +527,11 @@ function setLang(lang){
       </div>
     </div>
     <div class="f-bottom">
-      <div class="f-copy">© 2026 Jannayaks™ · Trivian LLP. All rights reserved.</div>
+      <div class="f-copy">© 2026 Jannayaks™ · Aurex Network. All rights reserved.</div>
       <div class="f-tag">Apolitical. Verified. Permanent.</div>
     </div>
   </div>
 </footer>
-
 <script>
 function switchTab(btn,tab){
   document.querySelectorAll('.search-tab').forEach(b=>b.classList.remove('active'));
